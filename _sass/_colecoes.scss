@@ -1,0 +1,46 @@
+// Identidade visual das duas coleções.
+// Ajuste os valores hexadecimais se decidirem outra paleta.
+
+$cor-ctpm-fundo: #FAECE7;
+$cor-ctpm-borda: #F0997B;
+$cor-ctpm-texto: #712B13;
+
+$cor-rbetno-fundo: #E1F5EE;
+$cor-rbetno-borda: #5DCAA5;
+$cor-rbetno-texto: #04342C;
+
+.badge-colecao {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-right: 4px;
+
+  &.badge-ctpm {
+    background: $cor-ctpm-fundo;
+    color: $cor-ctpm-texto;
+  }
+
+  &.badge-rbetno {
+    background: $cor-rbetno-fundo;
+    color: $cor-rbetno-texto;
+  }
+}
+
+.card-colecao {
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+
+  &.card-ctpm {
+    background: $cor-ctpm-fundo;
+    border: 1px solid $cor-ctpm-borda;
+    color: $cor-ctpm-texto;
+  }
+
+  &.card-rbetno {
+    background: $cor-rbetno-fundo;
+    border: 1px solid $cor-rbetno-borda;
+    color: $cor-rbetno-texto;
+  }
+}
