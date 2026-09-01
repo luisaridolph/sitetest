@@ -1,8 +1,61 @@
-# ---------------------------------------------------------
-# COLE ESTE BLOCO dentro do seu _config.yml existente.
-# Não substitua o arquivo inteiro — só adicione a chave "collections"
-# (e mescle com o que já existir lá, se houver).
-# ---------------------------------------------------------
+# Site settings
+title: Grupo de Etnobotânica - Jardim Botânico do Rio de Janeiro
+description: "Site do grupo de pesquisa em Etnobotânica e da Coleção Temática de Plantas Medicinais do Jardim Botânico do Rio de Janeiro (JBRJ)."
+author: Viviane S. Fonseca Kruel
+
+# URL do seu domínio principal (sem a barra final "/")
+url: "https://etnobotanicajbrj.github.io/"
+
+# Base URL
+# Se seu site não estiver no domínio principal, use o nome do repositório
+baseurl: "/medicinais_jbrj.github.io" 
+# Exemplo se o repositório fosse 'meu-projeto': baseurl: "/meu-projeto"
+
+# Build settings
+# O tema é essencial. Você pode usar um tema padrão como "minima"
+theme: minima
+
+# Exclusões
+# Arquivos ou pastas que o Jekyll deve ignorar
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# Links de Navegação do Site
+nav_links:
+  - title: Sobre
+    url: /sobre/
+  - title: Equipe
+    url: /equipe/
+  - title: Publicações
+    url: /publicacoes/
+  - title: Visite a Coleção!
+    url: /visite/
+  - title: Contato
+    url: /contato/
+
+plugins:
+  - jekyll-sitemap
+
+# --- Configuração do Menu Lateral (Sidebar) ---
+sidebar_nav:
+  - title: Home
+    url: /
+  - title: Sobre
+    url: /sobre/    
+  - title: Equipe
+    url: /equipe/
+  - title: Publicações
+    url: /publicacoes/
+  - title: Visite a Coleção!
+    url: /visite/
+  - title: Contato
+    url: /contato/
+# 💡 NOVO: Adicione o link e o ícone do Instagram
+  - title: Instagram
+    url: https://www.instagram.com/etnobotanicajbrj?igsh=MWxvMzA3Mms4a3AwMA== # Lembre-se de mudar o URL
+    icon: fab fa-instagram
+    external: true # Marcador opcional para indicar link externo
 
 collections:
   publicacoes:
