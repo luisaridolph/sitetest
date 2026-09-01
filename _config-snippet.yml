@@ -1,0 +1,25 @@
+# ---------------------------------------------------------
+# COLE ESTE BLOCO dentro do seu _config.yml existente.
+# Não substitua o arquivo inteiro — só adicione a chave "collections"
+# (e mescle com o que já existir lá, se houver).
+# ---------------------------------------------------------
+
+collections:
+  publicacoes:
+    output: true
+    permalink: /publicacoes/:path/
+  eventos:
+    output: true
+    permalink: /eventos/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "publicacoes"
+    values:
+      layout: "publicacao"
+  - scope:
+      path: ""
+      type: "eventos"
+    values:
+      layout: "publicacao"
